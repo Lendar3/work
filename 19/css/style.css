@@ -1,0 +1,15 @@
+.uk-card-title>small{
+    font-size: 50%;
+}
+.user-group > li {
+    display: inline;
+}
+.user-group>li:hover>img{
+    transform: scale(1.3);
+    cursor:pointer;
+    z-index: 10;
+}
+
+.user-group>li>img{
+    border: 2px soild #fff;
+}

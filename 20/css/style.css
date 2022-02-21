@@ -1,0 +1,83 @@
+h2{
+    margin: 10px;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 30% 20% 50% ;
+    grid-gap: 5px;
+    border: 3px solid black;
+    padding: 10px;
+}
+.med1{
+    width: 100%;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 40% 60% 0%;
+    grid-template-rows: 100%;
+    grid-gap:2px;
+}
+#child1{
+    border: 1px solid black;
+    grid-column: 1 / 2;
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrvfF_hjq7xZ5A4u8ZfxlhsuM26SNfC1eVqA&usqp=CAU) ;
+}
+#child2{
+    border: 1px solid black;
+    grid-column: 2 / 3;
+    background:url(https://static.wikia.nocookie.net/character-power/images/8/8f/DC_Comics.png/revision/latest/scale-to-width-down/700?cb=20190203204448&path-prefix=ru);
+}
+
+.med2{
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 45% 35% 20% ;
+    grid-template-rows: 100%;
+    grid-gap:2px;
+}
+#child3{
+    grid-column: 1 / 2;
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeB9fiyCDXgOkDOu73-MdtZE2ZLfWCkudU3A&usqp=CAU);
+    border: 1px solid black;
+}
+#child4{
+    grid-column: 2 / 3;
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMrxQPXX-RK7faPTjld7Ns3fkD6SPryrsIJQ&usqp=CAU);
+    border: 1px solid black;
+}
+#child5{
+    grid-column: 3 / 4;
+    background:url(http://www.milwaukeeindependent.com/wp-content/uploads/2020/08/080320_BadgerComics.jpg);
+    border: 1px solid black;
+}
+.med3{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns:repeat(12, 1fr) ;
+    grid-template-rows: 100%;
+    grid-gap:2px;
+}
+#child6{
+    grid-column: 1 / 3;
+    background:url(http://www.milwaukeeindependent.com/wp-content/uploads/2020/08/080320_BadgerComics.jpg);
+    border: 1px solid black;
+}
+#child7{
+    grid-column: 3 / 7;
+    background:url(http://www.milwaukeeindependent.com/wp-content/uploads/2020/08/080320_BadgerComics.jpg);
+    border: 1px solid black;
+}
+#child8{
+    grid-column: 7 / 8;
+    background:url(http://www.milwaukeeindependent.com/wp-content/uploads/2020/08/080320_BadgerComics.jpg);
+    border: 1px solid black;
+}
+#child9{
+        grid-column: 8 / 13;
+        background:url(http://www.milwaukeeindependent.com/wp-content/uploads/2020/08/080320_BadgerComics.jpg);
+        border: 1px solid black;
+}

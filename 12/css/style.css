@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,300&display=swap');
+:root{
+    --bg: #f0f4f3;
+    --theme:#3ab198;
+    --theme-two:#fff;
+    --text:#697a79;
+}
+body{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1005%26quot%3b)' fill='none'%3e%3cpath d='M211.818%2c282.934C260.538%2c282.8%2c305.717%2c254.075%2c327.294%2c210.393C346.869%2c170.763%2c330.422%2c126.284%2c308.017%2c88.182C286.019%2c50.772%2c255.14%2c16.578%2c211.818%2c14.012C164.305%2c11.198%2c117.864%2c34.522%2c93.625%2c75.484C68.962%2c117.164%2c71.26%2c168.952%2c95.235%2c211.032C119.46%2c253.551%2c162.882%2c283.069%2c211.818%2c282.934' fill='rgba(231%2c 11%2c 225%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M402.6 219.56 a185.99 185.99 0 1 0 371.98 0 a185.99 185.99 0 1 0 -371.98 0z' fill='rgba(231%2c 11%2c 225%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1372.737%2c330.927C1414.371%2c334.302%2c1462.799%2c335.247%2c1485.55%2c300.215C1509.55%2c263.259%2c1495.013%2c215.362%2c1472.322%2c177.588C1450.427%2c141.14%2c1415.243%2c113.479%2c1372.737%2c112.417C1328.432%2c111.31%2c1283.81%2c132.67%2c1264.146%2c172.388C1246.037%2c208.967%2c1264.636%2c250.505%2c1287.701%2c284.179C1307.292%2c312.782%2c1338.181%2c328.126%2c1372.737%2c330.927' fill='rgba(231%2c 11%2c 225%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M835.7181322400966 165.70024394094926L849.351071647838 251.77523577604995 971.6470896966183 188.2883307468874z' fill='rgba(231%2c 11%2c 225%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M142.69680649088622 382.40901797730027L197.39897269401308 439.0547693106481 255.01651659247136 328.6786443392839z' fill='rgba(231%2c 11%2c 225%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1015.374%2c496.336C1042.689%2c496.04%2c1071.761%2c490.913%2c1086.31%2c467.793C1101.655%2c443.408%2c1099.754%2c411.344%2c1084.064%2c387.18C1069.585%2c364.882%2c1041.952%2c359.236%2c1015.374%2c358.55C987.107%2c357.82%2c955.906%2c359.918%2c940.254%2c383.467C923.266%2c409.027%2c924.723%2c443.809%2c941.727%2c469.358C957.252%2c492.685%2c987.355%2c496.639%2c1015.374%2c496.336' fill='rgba(231%2c 11%2c 225%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1005'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'montserrat','sans-serif';
+    color:var(--text) ;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main.panel{
+    min-width: 900px;
+    width: 90vh;
+    background: var(--theme-two);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px -6px var(--text),0 0px 30px -50px var(--text);
+    display: flex;
+
+}
+main.panel .panel__half{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2px;
+    padding: 2rem 1rem;
+}
+main.pannel h2{
+    font-size: 1.9rem;
+    text-transform: capitalize;
+
+}
+main.panel p{
+    margin: 1rem 0;
+    min-width: 300px;
+    width: 100%;
+    font-size: 0.95hrem;
+    line-height: 1.5;
+    font-weight:300 ;
+    text-align: center;
+}
+main.panel a,
+main.panel button{
+    color: inherit;
+    font-family: inherit;
+
+}
+main.panel a{
+    text-decoration: none;
+    margin: 1ren;
+}
+main.panel .links a{
+    display: inline-block;
+    font-weight: 500;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+}
+
+main.panel .links a:hover
+main.panel .links a:focus{
+    background: var(--text);
+    color: var(--theme-two);
+}
+main.panel .panel__half>a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px dashed currentColor;
+}
+
+main.panel form{
+    display: flex;
+    flex-direction: column;
+}
+main.panel form input{
+    margin: 0.5rem 0 ;
+    width: 300px;
+    padding: 1rem 0.75rem;
+    background-color: var(--bg);
+    border: none;
+    color: inherit;
+    font-family: inherit;
+}
+main.panel from input::placeholder{
+    opacity: 0.8;
+}
+main.panel button{
+    background: none;
+    border: 1px soild currentColor;
+    border-radius:50px ;
+    padding: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+.panel__half.half--first{
+    flex-grow: 2;
+    border-radius: inherit;
+    border-bottom-right-radius:0 ;
+    border-top-right-radius: 0;
+}
+
+.panel__half.half--first button{
+    background: var(--theme);
+    color: var(--theme-two);
+}
+.panel__half.half--secound{
+    flex-grow: 1;
+    border-radius: inherit;
+    background: var(--theme);
+    color: var(--theme-two);
+    padding: 2rem;
+}
+.btn-contact:hover{
+
+}
+
+@media(max-width:760px){
+    main.panel{
+        flex-direction: column;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+        
+   }
+}
